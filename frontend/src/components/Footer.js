@@ -133,20 +133,20 @@ const Footer = () => {
             <h3 className="footer-title">Office Locations</h3>
             <div className="office-locations">
               <div className="location">
-                <h4 className="location-title">Surat (HQ)</h4>
-                <p className="location-details">Simada, Bhatar, Katargam</p>
+                <h4 className="location-title">Head Office - Simada, Surat</h4>
+                <p className="location-details">144, 1st Floor, Pramukh Park Soc, Opp. Royal Plaza, Bapa Sitaram Chowk, Simada, Surat – 395010</p>
               </div>
               <div className="location">
-                <h4 className="location-title">Other Offices</h4>
-                <p className="location-details">Rajkot • Ahmedabad • Delhi</p>
+                <h4 className="location-title">Other Locations</h4>
+                <p className="location-details">Katargam • Bhatar • Rajkot • Ahmedabad • Delhi</p>
               </div>
             </div>
             
             <div className="business-hours mt-4">
               <h4 className="hours-title">Business Hours</h4>
               <p className="hours-details">
-                Mon - Sat: 9:00 AM - 7:00 PM<br />
-                24/7 Emergency Support Available
+                Mon – Sat: 9:00 AM – 6:30 PM<br />
+                Sunday: Closed
               </p>
             </div>
           </div>
