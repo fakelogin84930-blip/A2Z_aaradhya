@@ -393,6 +393,10 @@ const Footer = () => {
           line-height: 1.5;
         }
         
+        .location-details {
+          max-width: 300px;
+        }
+        
         .footer-middle {
           display: grid;
           grid-template-columns: 1fr 1fr;
