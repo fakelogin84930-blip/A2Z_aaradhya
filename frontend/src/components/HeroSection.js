@@ -242,21 +242,38 @@ const HeroSection = () => {
         
         .stat-item {
           text-align: center;
+          position: relative;
+          padding: 1rem;
+          border-radius: 16px;
+          transition: all 0.4s var(--ease-out-cubic);
+        }
+        
+        .stat-item:hover {
+          background: rgba(88, 197, 198, 0.1);
+          transform: translateY(-5px);
         }
         
         .stat-number {
           display: block;
-          font-size: 2.5rem;
-          font-weight: 700;
+          font-size: 3rem;
+          font-weight: 800;
           color: var(--accent-primary);
           margin-bottom: 0.5rem;
+          text-shadow: 0 2px 8px rgba(88, 197, 198, 0.3);
+          animation: statNumberPulse 2s ease-in-out infinite alternate;
         }
         
         .stat-label {
           font-size: 0.875rem;
-          color: var(--text-muted);
+          color: var(--text-secondary);
           text-transform: uppercase;
-          letter-spacing: 0.05em;
+          letter-spacing: 0.1em;
+          font-weight: 500;
+        }
+        
+        @keyframes statNumberPulse {
+          0% { text-shadow: 0 2px 8px rgba(88, 197, 198, 0.3); }
+          100% { text-shadow: 0 4px 16px rgba(88, 197, 198, 0.5); }
         }
         
         .hero-actions {
