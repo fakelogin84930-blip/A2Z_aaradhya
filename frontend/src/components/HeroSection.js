@@ -27,7 +27,10 @@ const HeroSection = () => {
             </h1>
             
             <p className="hero-subtitle body-lg">
-              Empowering 8+ years of e-commerce excellence with 50+ professionals managing 1000+ accounts. 
+              Empowering Your E-Commerce Success from A to Z
+            </p>
+            <p className="hero-description body-md">
+              8+ years of e-commerce excellence with 50+ professionals managing 1000+ accounts. 
               From account setup to brand development, we make online selling simple, scalable & successful.
             </p>
             
