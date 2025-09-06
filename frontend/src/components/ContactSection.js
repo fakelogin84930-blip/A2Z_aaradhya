@@ -388,6 +388,12 @@ const ContactSection = () => {
           gap: 1rem;
         }
         
+        @media (max-width: 1200px) {
+          .offices-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+        
         .office-card {
           background: var(--bg-secondary);
           border: 1px solid var(--border-subtle);
