@@ -126,7 +126,7 @@ const ContactSection = () => {
                 <div className="method-info">
                   <div className="method-title">Phone Support</div>
                   <div className="method-details">+91 78020 77444</div>
-                  <div className="method-note">Available 24/7 for urgent support</div>
+                  <div className="method-note">Mon – Sat: 9:00 AM – 6:30 PM, Sunday: Closed</div>
                 </div>
               </div>
 
