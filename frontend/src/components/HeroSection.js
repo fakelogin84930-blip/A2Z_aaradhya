@@ -135,11 +135,21 @@ const HeroSection = () => {
         }
         
         .hero-subtitle {
-          margin-bottom: 3rem;
+          margin-bottom: 1.5rem;
           max-width: 700px;
           margin-left: auto;
           margin-right: auto;
           animation: fade-in-up 0.8s ease-out 0.2s both;
+          font-size: 1.25rem;
+          font-weight: 500;
+        }
+        
+        .hero-description {
+          margin-bottom: 3rem;
+          max-width: 700px;
+          margin-left: auto;
+          margin-right: auto;
+          animation: fade-in-up 0.8s ease-out 0.3s both;
         }
         
         .hero-stats {
