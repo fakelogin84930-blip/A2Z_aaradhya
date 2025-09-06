@@ -172,9 +172,14 @@ const HeroSection = () => {
           max-width: 700px;
           margin-left: auto;
           margin-right: auto;
-          animation: fade-in-up 0.8s ease-out 0.2s both;
-          font-size: 1.25rem;
-          font-weight: 500;
+          animation: heroSubtitleReveal 1.0s var(--ease-out-expo) 0.3s both;
+          font-size: 1.5rem;
+          font-weight: 600;
+          background: linear-gradient(135deg, var(--accent-primary), var(--accent-hover));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-align: center;
         }
         
         .hero-description {
@@ -182,7 +187,32 @@ const HeroSection = () => {
           max-width: 700px;
           margin-left: auto;
           margin-right: auto;
-          animation: fade-in-up 0.8s ease-out 0.3s both;
+          animation: heroDescriptionReveal 1.0s var(--ease-out-expo) 0.6s both;
+          opacity: 0.9;
+        }
+        
+        @keyframes heroSubtitleReveal {
+          0% {
+            opacity: 0;
+            transform: translateY(30px);
+            filter: blur(10px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+            filter: blur(0);
+          }
+        }
+        
+        @keyframes heroDescriptionReveal {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 0.9;
+            transform: translateY(0);
+          }
         }
         
         .hero-stats {
