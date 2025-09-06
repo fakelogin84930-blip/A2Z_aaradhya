@@ -163,8 +163,8 @@ const ContactSection = () => {
                         {office.city}
                         {office.isHQ && <span className="hq-badge">HQ</span>}
                       </div>
-                      <div className="office-areas">
-                        {office.areas.join(", ")}
+                      <div className="office-address">
+                        {office.address}
                       </div>
                     </div>
                     
