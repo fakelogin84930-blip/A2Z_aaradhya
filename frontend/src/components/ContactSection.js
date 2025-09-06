@@ -424,10 +424,11 @@ const ContactSection = () => {
           font-weight: 500;
         }
         
-        .office-areas {
+        .office-address {
           font-size: 0.875rem;
           color: var(--text-muted);
           margin-bottom: 1rem;
+          line-height: 1.4;
         }
         
         .office-detail {
