@@ -279,9 +279,20 @@ const HeroSection = () => {
         .hero-actions {
           display: flex;
           justify-content: center;
-          gap: 1.5rem;
+          gap: 2rem;
           flex-wrap: wrap;
-          animation: fade-in-up 0.8s ease-out 0.6s both;
+          animation: heroActionsReveal 1.0s var(--ease-out-expo) 1.2s both;
+        }
+        
+        @keyframes heroActionsReveal {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
         
         @keyframes wave {
