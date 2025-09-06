@@ -73,6 +73,22 @@ const HeroSection = () => {
           background: linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-dark-navy) 100%);
         }
         
+        .hero-section::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: radial-gradient(ellipse 80% 50% at 50% 20%, rgba(88, 197, 198, 0.1) 0%, transparent 60%);
+          animation: heroGlow 8s ease-in-out infinite alternate;
+        }
+        
+        @keyframes heroGlow {
+          0% { opacity: 0.3; transform: scale(1); }
+          100% { opacity: 0.6; transform: scale(1.1); }
+        }
+        
         .hero-background {
           position: absolute;
           top: 0;
