@@ -22,35 +22,51 @@ const ContactSection = () => {
 
   const offices = [
     {
-      city: "Surat (Headquarters)",
-      areas: ["Simada", "Bhatar", "Katargam"],
+      city: "Head Office - Simada, Surat",
+      address: "144, 1st Floor, Pramukh Park Soc, Opp. Royal Plaza, Bapa Sitaram Chowk, Simada, Surat – 395010",
       phone: "+91 78020 77444",
       email: "a2zaaradhya895@gmail.com",
-      hours: "Mon-Sat: 9:00 AM - 7:00 PM",
+      hours: "Mon – Sat: 9:00 AM – 6:30 PM",
       isHQ: true
     },
     {
-      city: "Rajkot",
-      areas: ["Regional Operations"],
+      city: "Surat Katargam Office",
+      address: "307, Elephanta Business Hub, Opp. Hari Darshan No Khado, Dabholi, Katargam, Surat – 395004",
+      phone: "+91 78020 77444",
+      email: "katargam@a2zaaradhya.com",
+      hours: "Mon – Sat: 9:00 AM – 6:30 PM",
+      isHQ: false
+    },
+    {
+      city: "Surat Bhatar Office",
+      address: "302-303, Meghana Complex, Olive Circle, Nr. Bharat Petrol Pump, U-M Road, Bhatar, Surat – 395007",
+      phone: "+91 78020 77444",
+      email: "bhatar@a2zaaradhya.com",
+      hours: "Mon – Sat: 9:00 AM – 6:30 PM",
+      isHQ: false
+    },
+    {
+      city: "Rajkot Office",
+      address: "911, Sanskar Heights, Between Mavdi Circle and Umiya Circle, 150 Feet Ring Road, Rajkot – 360007",
       phone: "+91 78020 77444",
       email: "rajkot@a2zaaradhya.com",
-      hours: "Mon-Sat: 9:00 AM - 6:00 PM",
+      hours: "Mon – Sat: 9:00 AM – 6:30 PM",
       isHQ: false
     },
     {
-      city: "Ahmedabad",
-      areas: ["Business Development Hub"],
+      city: "Ahmedabad Office",
+      address: "607, Blueberry, Nr. Bhojaldham Residency, Gurukul Circle, Nikol, Ahmedabad – 382350",
       phone: "+91 78020 77444",
       email: "ahmedabad@a2zaaradhya.com",
-      hours: "Mon-Sat: 10:00 AM - 6:00 PM",
+      hours: "Mon – Sat: 9:00 AM – 6:30 PM",
       isHQ: false
     },
     {
-      city: "Delhi",
-      areas: ["Northern Operations"],
+      city: "Delhi Office",
+      address: "Kinari Bazar, Chandni Chowk, Delhi – 110006",
       phone: "+91 78020 77444",
       email: "delhi@a2zaaradhya.com",
-      hours: "Mon-Sat: 10:00 AM - 7:00 PM",
+      hours: "Mon – Sat: 9:00 AM – 6:30 PM",
       isHQ: false
     }
   ];
