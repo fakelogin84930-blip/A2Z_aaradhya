@@ -139,7 +139,24 @@ const HeroSection = () => {
         
         .hero-title {
           margin-bottom: 1.5rem;
-          animation: fade-in-up 0.8s ease-out;
+          animation: heroTitleReveal 1.2s var(--ease-out-expo) forwards;
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        
+        @keyframes heroTitleReveal {
+          0% {
+            opacity: 0;
+            transform: translateY(40px) scale(0.95);
+          }
+          60% {
+            opacity: 0.8;
+            transform: translateY(-5px) scale(1.02);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+          }
         }
         
         .text-accent {
