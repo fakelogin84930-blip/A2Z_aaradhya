@@ -217,10 +217,27 @@ const HeroSection = () => {
         
         .hero-stats {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-          gap: 2rem;
+          grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+          gap: 3rem;
           margin-bottom: 3rem;
-          animation: fade-in-up 0.8s ease-out 0.4s both;
+          animation: heroStatsReveal 1.2s var(--ease-out-expo) 0.9s both;
+          padding: 2rem;
+          background: var(--glass-bg);
+          backdrop-filter: var(--backdrop-blur);
+          -webkit-backdrop-filter: var(--backdrop-blur);
+          border-radius: 24px;
+          border: 1px solid var(--glass-border);
+        }
+        
+        @keyframes heroStatsReveal {
+          0% {
+            opacity: 0;
+            transform: translateY(30px) scale(0.9);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+          }
         }
         
         .stat-item {
